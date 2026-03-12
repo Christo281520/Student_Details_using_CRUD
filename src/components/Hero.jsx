@@ -1,5 +1,5 @@
 import React from 'react'
-import python from '../assets/pythonlogo.jpg'
+import python from '../assets/studentlogo.jpg'
 
 const Hero = () => {
   return (
