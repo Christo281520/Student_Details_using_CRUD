@@ -1,0 +1,103 @@
+body {
+  background-color: #f4f6f9;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+}
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  flex: 1;
+}
+.navbar{
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+.navbar-brand{
+  font-weight: bold;
+}
+.navbar a{
+  font-weight: 500;
+}
+.hero-section{
+  background: linear-gradient(135deg, #34755c, #043b34);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+.hero-section h1{
+  font-weight: 700;
+}
+
+.hero-section p{
+  opacity: 0.9;
+}
+.student-card{
+  border-radius: 14px;
+  border: none;
+  transition: all 0.25s ease;
+}
+.student-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.student-card h5{
+  font-weight: 600;
+}
+button{
+  border-radius: 8px !important;
+}
+.student-detail{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+}
+
+.student-detail span:first-child{
+  font-weight: 600;
+  color: #444;
+}
+.footer{
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+.popup-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.popup-form{
+  background: white;
+  padding: 25px;
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  animation: popupFade 0.25s ease;
+}
+@keyframes popupFade{
+  from{
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.popup-form label{
+  font-weight: 600;
+  margin-top: 5px;
+}
